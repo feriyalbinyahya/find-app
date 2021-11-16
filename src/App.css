@@ -1,38 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
 .App {
   text-align: center;
+  background-color: #F2FDFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-text {
+  font-family: 'Mali', cursive;
+  margin-left: 10px;
+  margin-top: 65px;
+  font-size: 50px;
+  color: #6C63FF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.find-friend-text {
+  font-family: 'Mali', cursive;
+  margin-left: 250px;
+  margin-top: 70px;
+  font-size: 48px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.header {
+  display: flex;
 }
+
+.img-social {
+  width: 300px;
+}
+
+.title-app {
+  display: flex;
+}
+
+

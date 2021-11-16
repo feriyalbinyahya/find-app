@@ -1,0 +1,10 @@
+.box-card {
+    background-color: #F2FDFF;
+    border-radius: 5px;
+    box-shadow: 3px 5px #C8D1D3;
+}
+
+.img-card {
+    width: 170px;
+    height: 220px;
+}
