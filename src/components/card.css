@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
 .box-card {
     background-color: #F2FDFF;
     border-radius: 5px;
-    box-shadow: 3px 5px #C8D1D3;
+    width: 250px;
+    box-shadow: 3px 5px 3px 3px #C8D1D3;
+    margin-left: 70px;
 }
 
 .img-card {
     width: 170px;
     height: 220px;
+    padding: 5px 5px;
 }
