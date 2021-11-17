@@ -61,8 +61,12 @@ class App extends Component {
           </div>
         </div>
         <div className="container">
-          <Card stateApp={person1} />
-          <Card stateApp={person2} />
+          <div className="col-1">
+            <Card stateApp={person1} />
+          </div>
+          <div className="col-2">
+            <Card stateApp={person2} />
+          </div>
         </div>
         <button type="button" class="btn btn-primary button-find" onClick={this.handleClickFind}>Find</button>
         <div className="bottom">

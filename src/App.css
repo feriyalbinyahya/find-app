@@ -20,10 +20,19 @@
   background-color: #6C63FF;
 }
 
+.col-1 {
+  width: 100px;
+  margin-left: 270px;
+}
+
+.col-2 {
+  width: 100px;
+  margin-left: 270px;
+}
+
 
 .container {
   display: flex;
-  margin-left: 400px;
 
 }
 
@@ -42,7 +51,7 @@
 
 .img-social {
   width: 300px;
-  margin-left: 1000px;
+  margin-left: 1100px;
   margin-top: -120px;
 }
 
@@ -52,6 +61,40 @@
 
 .tree-swing {
   width: 300px;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 600px) {
+
+  .app-text {
+    font-size: 32px;
+    margin-top: 70px;
+  }
+
+  .col-1 {
+    margin-left: 30px;
+  }
+  .col-2 {
+    margin-left: 30px;
+  }
+
+  .container {
+      display: block;
+  }
+
+  .img-social {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .find-friend-text {
+    margin-left: 40px;
+    font-size: 32px;
+  }
+
+  .header {
+    display: block;
+  }
 }
 
 
