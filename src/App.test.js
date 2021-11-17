@@ -1,16 +1,33 @@
 import React from 'react';
-import {fireEvent, render, waitForElement} from '@testing-library/react';
+import { render, unmountComponentAtNode } from "react-dom";
+import { act } from "react-dom/test-utils";
+import {fireEvent, waitForElement, screen} from '@testing-library/react';
 import App from './App';
 
-global.fetch = jest.fn(() => Promise.resolve({
-  json: () => Promise.resolve({
-    value: "Sinta Dila"
-  })
-}))
+let container = null;
+beforeEach(() => {
+  // setup a DOM element as a render target
+  container = document.createElement("div");
+  document.body.appendChild(container);
+});
 
-describe('App', () => {
-    it("load Sinta on mount", () => {
-      const {container} = render(<App />)
-      expect(container.innerHTML).toMatch("Sinta Dila")
-    })
+afterEach(() => {
+  // cleanup on exiting
+  unmountComponentAtNode(container);
+  container.remove();
+  container = null;
+});
+
+
+it("renders user data", async () => {
+
+  // Use the asynchronous version of act to apply resolved promises
+  act( () => {
+    render(<App />, container);
+  });
+
+  
+  expect(container.textContent).toContain("FindFriendApp");
+
+  // remove the mock to ensure tests are completely isolated
 });

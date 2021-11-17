@@ -50,7 +50,6 @@ class App extends Component {
 
   render() {
     const { person1, person2 } = this.state;
-    console.log(person1);
     return (
       <div className="App">
         <div className="header">
@@ -68,7 +67,7 @@ class App extends Component {
             <Card stateApp={person2} />
           </div>
         </div>
-        <button type="button" class="btn btn-primary button-find" onClick={this.handleClickFind}>Find</button>
+        <button type="button" className="btn btn-primary button-find" onClick={this.handleClickFind}>Find</button>
         <div className="bottom">
           <img className="img-social" src={imgsocial} alt="social" />
         </div>
